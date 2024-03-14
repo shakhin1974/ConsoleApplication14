@@ -7,7 +7,10 @@ class Person {
 	string f_name;
 	int age;
 	char gend;
-	string* arr;
+	string* ch_arr;
+	string phone;
+	string parents;
+	string married;
 public:
 	int id;
 	void Sur_name(string surname);
@@ -15,15 +18,22 @@ public:
 	void F_name(string f_name_);
 	void Age(int age_);
 	void Gend(char gend_);
-	void Arr(string* _arr)
-	{
-		arr = _arr;
-	}
-	void Vivod() { std::cout << id 
+	void Phone(string phone_);
+	void CH_Arr(string* _arr);
+	void Parents(string f_name, string f_surname);
+	void Vivod(int n) { std::cout << id 
 		<< "  " << sur_name
 		<< "  " << age
 		<< "  " << gend
-		<< "  " << arr[0]
-<< endl; }
+		<< "  " << phone
+		<< endl;
+		cout << "Дети " << sur_name<<"a "<<endl;
+	for (int i = 0; i < n; i++)
+		
+	{
+		cout << ch_arr[i]<<" ";
+		}
+ 
+ }
 
 };
